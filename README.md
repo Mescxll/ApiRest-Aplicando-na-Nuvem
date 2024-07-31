@@ -1,10 +1,61 @@
 # Projeto: Publicando Sua API REST na Nuvem Usando Spring Boot, Java 21 e Railway
+## Figma e representação visual
+O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
+Acesse a representação: [BookStore](https://www.figma.com/design/RBnvNT1wRCB1HQ6ri10mKA/Library?node-id=0-1&t=DDJ9a7llpA7zOfOs-1)
 ## Status
 Em desenvolvimento
 ## Foco de aprendizagem
 Spring Framework com Spring Boot, API REST, Railway e Gerenciamento com Gandle.
 ## Diagrama de Classe Da API em desenvolvimento - Sistema de uma Livraria
-Em desenvolvimento
+```mermaid
+classDiagram
+    class Bookstore {
+        +string name
+        +string address
+        +Account account
+        +list~Book~ books
+        +Front front
+    }
+    
+    class Account {
+        +string name
+        +int age
+        +string address
+        +list~Book~ purchaseHistory
+        +list~Book~ cart
+        +list~Book~ favorite
+    }
+    
+    class Book {
+        +string name
+        +string id
+        +float price
+        +string genre
+        +int quantityOnStore
+        +int quantitySold
+        +list~Book~ booksOnOffer
+    }
+    
+    class Front {
+        +Icons icons
+    }
+    
+    class Icons {
+        +string bell
+        +string bookOpen
+        +string search
+        +string cart
+        +string home
+        +string profile
+        +string ellipsis
+        +string arrows
+    }
+    
+    Bookstore --> Account
+    Bookstore --> Book
+    Bookstore --> Front
+    Front --> Icons
+```
 ## Uso e tecnologias utilizadas
 A produção do projeto em questão se limita ao uso do Framework Spring, mais especificamente Spring Boot, alguma IDE (Integrated Development Environment ou Ambiente de Desenvolvimento integrado) da linguagem Java, nesse caso a IDE Eclipse e as tecnologias básicas Eclipse e Java. Ademais, utilizou-se algumas dependências naturais ou não do próprio framework.
 
