@@ -5,7 +5,7 @@ Acesse a representação: [BookStore](https://www.figma.com/design/RBnvNT1wRCB1H
 ## Status
 Em desenvolvimento
 ## Foco de aprendizagem
-Spring Framework com Spring Boot, API REST, Railway e Gerenciamento com Gandle.
+Spring Framework com Spring Boot, API REST, Railway e Gerenciamento com Maven.
 ## Diagrama de Classe Da API em desenvolvimento - Sistema de uma Livraria
 ```mermaid
 classDiagram
