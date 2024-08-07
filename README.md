@@ -24,9 +24,11 @@ classDiagram
         +list~Book~ purchaseHistory
         +list~Book~ cart
         +list~Book~ favorite
+        +list~Book~ personalLibrary
     }
     
     class Book {
+        +string cover
         +string name
         +string id
         +float price
